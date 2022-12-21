@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyflow Elements</title>
+    <!--Import Skyflow script -->
+    <script src="https://js.skyflow.com/v1/index.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .empty-div {
+            height: 100px;
+            width: 350px;
+        }
+
+        .reveal-view {
+            margin-top: 48px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Collect Elements</h3>
+    <!-- Collect Part -->
+    <div>
+        <div id="collectCardNumber" class="empty-div"></div>
+        <div>
+            <button id="collectPCIData">Collect PCI Data</button>
+        </div>
+        <br />
+        <div id="collectFile" class="empty-div"></div>
+        <div>
+            <button id="uploadFileData">Upload File</button>
+        </div>
+        <div>
+            <pre id="collectResponse"></pre>
+        </div>
+        <br />
+        <div>
+            <pre id="uploadResponse"></pre>
+        </div>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="./app.js">
+    </script>
+</body>
+
+</html>
